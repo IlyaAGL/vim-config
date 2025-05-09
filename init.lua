@@ -18,6 +18,10 @@ vim.cmd [[
   highlight NonText ctermbg=none
 ]]
 
+vim.diagnostic.config({
+  virtual_text = { show = 'first' }
+})
+
 
 require("nvim-options")
 require("lazy").setup("plugins")
